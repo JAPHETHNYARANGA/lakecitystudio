@@ -1,0 +1,37 @@
+.container-fluid{
+    display: flex;
+    padding-top: 2rem;
+    position: fixed;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    height: 8rem;
+}
+
+.container-fluid  div ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.container-fluid div ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 1rem;
+        text-align: center;
+}
+.container-fluid div ul li:hover{
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-fluid img{
+    height: 5rem;
+}
+
+
+.container-fluid.scrolled {
+    background-color: gray;
+    /* Other styles for the scrolled navbar */
+  }
