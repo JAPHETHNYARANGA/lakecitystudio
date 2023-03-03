@@ -1,0 +1,10 @@
+.pricing{
+    background-color: black;
+    color: white;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.pricing .container-fluid h2{
+    margin: 2rem 0;
+}

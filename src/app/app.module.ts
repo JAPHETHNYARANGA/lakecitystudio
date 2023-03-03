@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HomepageComponent,
     FooterComponent,
+    PricingComponent,
     
   ],
   imports: [
