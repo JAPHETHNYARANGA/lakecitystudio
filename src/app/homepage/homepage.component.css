@@ -1,0 +1,58 @@
+.top-component{
+    padding-top: 5rem;
+    overflow-x: hidden;
+    
+}
+
+/* .home-text{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+} */
+
+.home-text{
+    margin-top: 10%;
+    align-items: center;
+    color: white;
+}
+.icon-container{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.top-component .row .home-text .icon-container i{
+    padding-top: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    
+  }
+  .top-section{
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+  }
+
+  .services{
+    margin-top: 2rem;
+    /* height: 100%; */
+    
+  }
+
+  .our-equipment h2,
+  .top-component .services h2{
+        font-weight: bold;
+        color: gray;
+        margin-bottom: 2rem;
+  }
+
+  .speakers{
+    margin-top: 10%;
+  }
+
+  .our-equipment button{
+    margin: 3rem, 0;
+  }
