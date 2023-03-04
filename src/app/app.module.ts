@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { RecordingStudiosComponent } from './recording-studios/recording-studios.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { PricingComponent } from './pricing/pricing.component';
     HomepageComponent,
     FooterComponent,
     PricingComponent,
+    RecordingStudiosComponent,
+    AboutUsComponent,
     
   ],
   imports: [
