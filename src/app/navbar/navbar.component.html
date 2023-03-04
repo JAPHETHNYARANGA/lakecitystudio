@@ -3,14 +3,15 @@
     <img src="assets/images/LOGO png-01.png" alt="" >
 
     <div class="text-center">
-        <ul>
+        <ul class="list" *ngIf="isItemVisible" (click)="isItemVisible = false">
             <li routerLink="">Home</li>
-            <li>About</li>
+            <li routerLink="about-us">About</li>
             <li routerLink="recording">Recording Studios</li>
             <li>Academy</li>
             <li>Events</li>
             <li>Shop Now</li>
         </ul>
+        <i class="fa fa-bars" id="toggle" (click)="isItemVisible = !isItemVisible"></i>
     </div>
     
 

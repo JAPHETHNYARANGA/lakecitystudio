@@ -36,3 +36,39 @@
     background-color: gray;
     /* Other styles for the scrolled navbar */
   }
+
+  .container-fluid .text-center i {
+  
+        color: white;
+        display: none;
+    
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    .container-fluid .text-center i{
+        display: block;
+        cursor: pointer;
+    }
+    .list{
+        display: none ;
+        background-color: black;
+        color: white;
+    }
+
+   .container-fluid .text-center ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container-fluid .text-center ul li a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fa-bars{
+        background-color: black;
+    }
+  }

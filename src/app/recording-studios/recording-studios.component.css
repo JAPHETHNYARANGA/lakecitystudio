@@ -1,0 +1,49 @@
+.recording-studios{
+    padding-top: 10%;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    
+}
+
+.recording-studios .container-fluid form{
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%)
+}
+
+.clear{
+    clear: both;
+}
+.recording-studios .container-fluid form{
+    background-color: transparent;
+    /* background-color: #ffffff;
+    opacity: 0.8; */
+}
+
+.form-control{
+    background-color: transparent;
+    color: green;
+    margin-top: 1%;
+  }
+
+.recording-studios .container-fluid .text-center img{
+    width: 10%; /* or any other value, such as 200px */
+    height: auto; /* maintains aspect ratio */
+     
+}
+.recording-studios .container-fluid h3{
+    font-weight: bold;
+    color: gray;
+    font-size: 2rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .recording-studios{
+      padding-top: 40%;
+      height: 110vh;
+    }
+  }
