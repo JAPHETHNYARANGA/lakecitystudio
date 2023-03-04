@@ -6,7 +6,7 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  // showNavbar = true;
+  isSmallScreen = false;
   isItemVisible = true;
   public navbarClass = '';
 
@@ -15,7 +15,7 @@ export class NavbarComponent {
   isClickable: boolean = false;
 
   @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event:any){
+  onWindowScroll(event: any) {
     const offset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if (offset > 50) {
       this.navbarClass = 'scrolled';
@@ -24,11 +24,31 @@ export class NavbarComponent {
     }
   }
 
+  constructor() {
+    this.checkScreenSize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+
+  
+  onResize(event: any) {
+    this.checkScreenSize();
+  }
+  private checkScreenSize() {
+    if (window.innerWidth < 600) {
+      this.isItemVisible = false
+    } else {
+      this.isItemVisible = true
+    }
+  }
+
   ngOnInit() {
-    this.isItemVisible = false
+   
+    
+    
   }
 
 
- 
+
 
 }
